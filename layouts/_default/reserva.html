@@ -124,17 +124,21 @@
       </form>
 
 
-  <div class="row marketing" v-show="nohabuscado">
-    <div class="col-lg-6">
-      <h4>Mejor precio garantizado</h4>
-      <p>No encontrará un precio mejor.</p>
-    </div>
+      <!-- mensajes adicionales -->
 
-    <div class="col-lg-6">
-      <h4>Ventajas reserva online</h4>
-      <p>Late checkout, cocktail de bienvenida, las mejores habitaciones disponibles y otras ventajas si reserva en nuestra web.</p>
-    </div>
-  </div>
+      <div class="row marketing" v-show="nohabuscado">
+
+        {{ range $.Page.Site.Data.todo.reserva.mensajes }}
+
+        <div class="col-lg-6">
+          <h4>{{ .titulo }}</h4>
+          <p>{{ .texto }}</p>
+        </div>
+
+        {{ end }}
+
+      </div>
+
 
 
 
