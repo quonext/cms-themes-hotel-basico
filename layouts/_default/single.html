@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body>
+
+
+      <div class="container">
+
+        {{ partial "header.html" . }}
+
+        <main role="main">
+
+
+          <h1>{{ .Title }}</h1>
+
+
+
+
+{{ .Content }}
+
+
+
+        </main>
+
+        {{ partial "footer.html" . }}
+
+      </div> <!-- /container -->
+
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -80,3 +80,58 @@ body {
     border-bottom: 0;
   }
 }
+
+
+
+
+
+
+
+
+.habitaciones, .pax, .edades {
+  margin-top: 4px;
+}
+.edades {
+  width: 100%;
+}
+.ocupacion {
+  margin-top: 1px;
+}
+
+
+.calendario .dia {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.calendario .diaenblanco {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.av {
+  color: green;
+}
+
+.na {
+  color: red;
+  opacity: 0.2;
+}
+
+.or {
+  color: lightblue;
+}
+
+.av:hover, .or:hover{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.marcado {
+  background-color: blue;
+  color: white;
+}

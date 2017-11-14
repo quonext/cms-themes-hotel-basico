@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body>
+
+
+      <div class="container">
+
+        {{ partial "header.html" . }}
+
+        <main role="main">
+
+
+          <h1>{{ .Title }}</h1>
+
+
+
+
+          <div class="card-deck" style="margin-top: 50px;margin-bottom: 50px;">
+
+
+            {{ range $.Page.Site.Data.todo.ofertas }}
+
+
+            <div class="card">
+              <img class="card-img-top" src="{{ .imagen }}" width="100%" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">{{.titulo}}</h4>
+                <p class="card-text">{{ .texto }}</p>
+              </div>
+              <div class="card-footer" style="text-align: center;">
+                <!--
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        -->
+                <button type="button" class="btn btn-info" onclick="location = '/reserva'">
+                              <span class="fa fa-search"></span> Book
+                            </button>
+              </div>
+            </div>
+
+            {{ end }}
+
+          </div>
+
+
+
+
+        </main>
+
+        {{ partial "footer.html" . }}
+
+      </div> <!-- /container -->
+
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
