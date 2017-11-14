@@ -13,8 +13,12 @@
 
           <!-- mensaje principal -->
           <div class="jumbotron">
+            <!--
             <h1 class="display-3">{{ .Param "mensajeprincipal" }}</h1>
             <p class="lead">{{ .Param "mensajesecundario"}}</p>
+          -->
+            <h1 class="display-3">{{ $.Page.Site.Data.todo.home.mensajeprincipal }}</h1>
+            <p class="lead">{{ $.Page.Site.Data.todo.home.mensajesecundario }}</p>
           </div>
 
 
